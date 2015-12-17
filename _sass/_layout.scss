@@ -176,7 +176,7 @@
     width: 40%;
     text-align: center;
     margin-left: 30%;
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 .post-list {
@@ -193,18 +193,38 @@
 
 .tile-list {
   @extend .post-list;
-
+  margin-top: 4vh;
+  font-size: 2rem;
   > li {
-    width: 29.33333%;
+    width: 20%;
     float: left;
-    height: 10rem;
     display: inline-block;
-    margin: 2%;
+    margin: 6.6667%;
+    margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit;
   }
 
   > li:nth-child(4n) {
     clear:left;
   }
+}
+
+.tile-list span {
+  display: block;
+  margin-top: -6rem;
+  position: absolute;
+  text-align: center;
+}
+
+.tile-list img {
+  width: 100%;
+}
+
+img.corner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 25vh;
 }
 
 .post-meta {
