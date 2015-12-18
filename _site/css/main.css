@@ -450,18 +450,6 @@ pre {
   .highlight .il {
     color: #099; }
 
-div.tiny-tile ul {
-  position: fixed;
-  top: 5px;
-  left: 30vh;
-  margin: 0; }
-
-div.tiny-tile li {
-  height: 20px;
-  width: 20px;
-  margin: 10px;
-  clear: none !important; }
-
 .tile-list {
   margin-top: 4vh;
   font-size: 2rem; }
@@ -489,3 +477,15 @@ img.corner {
   top: 0;
   left: 0;
   height: 25vh; }
+
+.tiny-tile ul {
+  left: 30vh;
+  margin: 0;
+  position: fixed;
+  top: 5px; }
+
+.tiny-tile li {
+  clear: none !important;
+  height: 20px;
+  margin: 10px;
+  width: 20px; }
