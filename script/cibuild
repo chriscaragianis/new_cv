@@ -3,4 +3,4 @@ set -e # halt script on error
 
 bundle exec jekyll build
 bundle exec htmlproof ./_site --href-ignore "#"
-bundle exec scss-lint _sass/
+bundle exec scss-lint -x VendorPrefix DuplicateProperty _sass/
