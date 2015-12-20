@@ -18,18 +18,18 @@ figure {
   padding: 0; }
 
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
   background-color: #eee;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 25vh;
+  color: #111;
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  background-size: 25vh;
-  background-position: left top;
-  background-repeat: no-repeat; }
+  -webkit-text-size-adjust: 100%; }
 
 h1,
 h2,
@@ -57,14 +57,20 @@ figure > img {
 figcaption {
   font-size: 14px; }
 
-ul, ol {
+ul,
+ol {
   margin-left: 30px; }
 
 li > ul,
 li > ol {
   margin-bottom: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400; }
 
 a {
@@ -77,57 +83,57 @@ a {
     text-decoration: underline; }
 
 blockquote {
-  color: #828282;
   border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
+  color: #828282;
   font-size: 18px;
+  font-style: italic;
   letter-spacing: -1px;
-  font-style: italic; }
+  padding-left: 15px; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
 pre,
 code {
-  font-size: 15px;
+  background-color: #eef;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  font-size: 15px; }
 
 code {
   padding: 1px 5px; }
 
 pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
+  overflow-x: auto;
+  padding: 8px 12px; }
   pre > code {
     border: 0;
-    padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
 
 .wrapper {
+  margin-left: auto;
+  margin-right: auto;
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-right: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .wrapper:after, .footer-col-wrapper:after {
-  content: "";
-  display: table;
-  clear: both; }
+  clear: both;
+  content: '';
+  display: table; }
 
 .icon > svg {
   display: inline-block;
-  width: 16px;
   height: 16px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 16px; }
   .icon > svg path {
     fill: #828282; }
 
