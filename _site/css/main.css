@@ -137,57 +137,54 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-/**
- * Site header
- */
 .site-header {
-  border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
+  border-top: 5px solid #424242;
   min-height: 56px;
   position: relative; }
 
 .site-title {
+  float: left;
   font-size: 26px;
   font-weight: 300;
-  line-height: 56px;
   letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left; }
+  line-height: 56px;
+  margin-bottom: 0; }
   .site-title, .site-title:visited {
     color: #424242; }
 
 .site-nav {
   float: right;
   line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav .page-link {
-    color: #111;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
-      margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      position: absolute;
-      top: 9px;
-      right: 15px;
       background-color: #eee;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right; }
+      position: absolute;
+      right: 15px;
+      text-align: right;
+      top: 9px; }
       .site-nav .menu-icon {
         display: block;
         float: right;
-        width: 36px;
         height: 26px;
         line-height: 0;
         padding-top: 10px;
-        text-align: center; }
+        text-align: center;
+        width: 36px; }
         .site-nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
+          height: 15px;
+          width: 18px; }
           .site-nav .menu-icon > svg path {
             fill: #424242; }
+      .site-nav .menu-icon {
+        display: none; }
+      .site-nav .page-link {
+        color: #111;
+        line-height: 1.5; }
+        .site-nav .page-link:not(:last-child) {
+          margin-right: 20px; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -196,14 +193,11 @@ pre {
         padding-bottom: 5px; }
       .site-nav .page-link {
         display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        padding: 5px 10px; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
-/**
- * Site footer
- */
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
@@ -218,8 +212,8 @@ pre {
   margin-left: 0; }
 
 .footer-col-wrapper {
-  font-size: 15px;
   color: #828282;
+  font-size: 15px;
   margin-left: -15px; }
 
 .footer-col {
@@ -253,39 +247,33 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-/**
- * Page content
- */
 .page-content {
   padding: 30px 0; }
 
 .page-heading {
   font-size: 20px;
-  width: 40%;
-  text-align: center;
   margin-left: 30%;
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  text-align: center;
+  width: 40%; }
 
 .post-list, .tile-list {
-  margin-left: 0;
-  list-style: none; }
+  list-style: none;
+  margin-left: 0; }
   .post-list > li, .tile-list > li {
-    margin-bottom: 30px;
-    display-style: block;
+    background-color: #fff;
     box-shadow: 2px 2px 2px #444;
-    background-color: #fff; }
+    display: block;
+    margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
-  color: #828282; }
+  color: #828282;
+  font-size: 14px; }
 
 .post-link {
   display: block;
   font-size: 24px; }
 
-/**
- * Posts
- */
 .post-header {
   margin-bottom: 30px; }
 
@@ -457,32 +445,30 @@ pre {
     color: #099; }
 
 .tile-list {
-  margin-top: 4vh;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-top: 4vh; }
   .tile-list > li {
-    width: 20%;
-    float: left;
     display: inline-block;
+    float: left;
     margin: 6.6667%;
     margin-bottom: 30px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 20%; }
   .tile-list > li:nth-child(4n) {
     clear: left; }
+  .tile-list span {
+    display: block;
+    margin-top: -6rem;
+    position: absolute;
+    text-align: center; }
+  .tile-list img {
+    width: 100%; }
 
-.tile-list span {
-  display: block;
-  margin-top: -6rem;
-  position: absolute;
-  text-align: center; }
-
-.tile-list img {
-  width: 100%; }
-
-img.corner {
-  position: fixed;
-  top: 0;
+.corner {
+  height: 25vh;
   left: 0;
-  height: 25vh; }
+  position: fixed;
+  top: 0; }
 
 .tiny-tile ul {
   left: 30vh;
@@ -495,3 +481,6 @@ img.corner {
   height: 20px;
   margin: 10px;
   width: 20px; }
+
+.tiny-tile img {
+  margin-top: -165%; }

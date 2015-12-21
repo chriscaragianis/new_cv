@@ -25,6 +25,7 @@ figure {
 $background-color: #eee;
 $hi-background: #fff;
 $code-background: #eef;
+$box-shadow-color: #444;
 
 //
 // Basic styling
@@ -231,7 +232,7 @@ pre {
     height: 16px;
     vertical-align: middle;
     width: 16px;
-    
+
     path {
       fill: $grey-color;
     }
