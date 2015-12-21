@@ -12,6 +12,7 @@ email: chriscaraganis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     Teachist, mathematizer, code-ician, Doctor of Thinkology.
 baseurl: "/new_cv" # the subpath of your site, e.g. /blog
+permalink: /:categories/:title
 url: "http://chriscaragianis.github.io/" # the base hostname & protocol for your site
 twitter_username: brohammersdad
 github_username:  chriscaragianis

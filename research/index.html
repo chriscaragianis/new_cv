@@ -3,3 +3,20 @@ layout: tld
 ---
 <img src = "{{ site.baseurl }}/assets/research.png" class="corner research" alt="Research">
 {% include tiny_tiles.html %}
+
+<div class="home">
+
+  <h1 class="page-heading">Research Projects</h1>
+
+  <ul class="post-list">
+    {% for project in site.categories['research'] %}
+      <li>
+        <h2>
+          <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>

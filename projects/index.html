@@ -4,3 +4,22 @@ layout: tld
 
 <img src = "{{ site.baseurl }}/assets/projects.png" class="corner projects" alt="Projects">
 {% include tiny_tiles.html %}
+
+<div class="home">
+
+  <h1 class="page-heading">A blog of things</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
