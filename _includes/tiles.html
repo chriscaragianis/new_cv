@@ -36,6 +36,11 @@
     </a>
   </li>
   <li id="home">
+    <script type = "text/javascript">
+      if ($('#home').parents('.tiny-tile').length == 0) {
+        $('#home').hide();
+      }
+    </script>
     <a href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}/assets/home.png" alt="Home" class="home">
       <span style="display: none;" class="timeline">Home</span>
