@@ -1,7 +1,7 @@
 $("ul.tile-list li").mouseover(function() {
   var name = $(this).attr('id');
   $('.corner').show();
-  $('.corner').attr('src', '/new_cv/assets/' + name + '.png');
+  $('.corner').attr('src', '/assets/' + name + '.png');
   $('img.' + name).css('opacity', '0.1');
   $('span.' + name).show();
 });
